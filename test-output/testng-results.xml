@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14590" started-at="2016-01-20T16:19:58Z" finished-at="2016-01-20T16:20:13Z">
+  <suite name="Default suite" duration-ms="17437" started-at="2016-01-20T17:13:37Z" finished-at="2016-01-20T17:13:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14590" started-at="2016-01-20T16:19:58Z" finished-at="2016-01-20T16:20:13Z">
+    <test name="Default test" duration-ms="17437" started-at="2016-01-20T17:13:37Z" finished-at="2016-01-20T17:13:55Z">
       <class name="testCase.TestCaseforVerifySearchModule">
-        <test-method status="PASS" signature="startup()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="startup" is-config="true" duration-ms="13855" started-at="2016-01-20T11:19:44Z" finished-at="2016-01-20T11:19:58Z">
+        <test-method status="PASS" signature="startup()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="startup" is-config="true" duration-ms="12068" started-at="2016-01-20T12:13:25Z" finished-at="2016-01-20T12:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method status="PASS" signature="loging()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="loging" duration-ms="4947" started-at="2016-01-20T11:19:58Z" finished-at="2016-01-20T11:20:03Z">
+        <test-method status="PASS" signature="loging()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="loging" duration-ms="4895" started-at="2016-01-20T12:13:37Z" finished-at="2016-01-20T12:13:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loging -->
-        <test-method status="PASS" signature="clickSearchList()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="clickSearchList" duration-ms="2886" started-at="2016-01-20T11:20:03Z" finished-at="2016-01-20T11:20:06Z">
+        <test-method status="PASS" signature="clickSearchList()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="clickSearchList" duration-ms="3001" started-at="2016-01-20T12:13:42Z" finished-at="2016-01-20T12:13:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSearchList -->
-        <test-method status="PASS" signature="clickNameTab()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="clickNameTab" duration-ms="2357" started-at="2016-01-20T11:20:06Z" finished-at="2016-01-20T11:20:08Z">
+        <test-method status="PASS" signature="clickNameTab()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="clickNameTab" duration-ms="2358" started-at="2016-01-20T12:13:45Z" finished-at="2016-01-20T12:13:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickNameTab -->
-        <test-method status="PASS" signature="membersSearchByName()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="membersSearchByName" duration-ms="4385" started-at="2016-01-20T11:20:08Z" finished-at="2016-01-20T11:20:13Z">
+        <test-method status="PASS" signature="membersSearchByName()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="membersSearchByName" duration-ms="4357" started-at="2016-01-20T12:13:47Z" finished-at="2016-01-20T12:13:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersSearchByName -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="tearDown" is-config="true" duration-ms="998" started-at="2016-01-20T11:20:13Z" finished-at="2016-01-20T11:20:14Z">
+        <test-method status="PASS" signature="openMemberProfile()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="openMemberProfile" duration-ms="2814" started-at="2016-01-20T12:13:52Z" finished-at="2016-01-20T12:13:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMemberProfile -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="tearDown" is-config="true" duration-ms="935" started-at="2016-01-20T12:13:55Z" finished-at="2016-01-20T12:13:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -15,6 +15,8 @@ public class AllMethod {
 	}
 
 	public  void clickOnTheListByText(String text) {
+		
+		try{
 		driver.findElement(By.xpath(".//*[@id='commandBarForm:searchMenu_button']")).click();
 		List<WebElement> list = driver.findElements(By.xpath(".//*[@id='commandBarForm:searchMenu_menu']/ul/li"));
 		for (int i = 1; i <= list.size(); i++) {
@@ -24,6 +26,8 @@ public class AllMethod {
 				listText.click();
 				break;
 			} 
+		}}catch(NullPointerException a ){
+			throw(a);
 		}
 	}
 
@@ -48,4 +52,23 @@ public class AllMethod {
 	      }
 	
 	}
+	
+	public void clickMemberByDob(String dob){
+	
+		List<WebElement> list = driver.findElements(By.xpath(".//*[@id='memberSearchResultsForm:memberSearchResultsTable:searchResultsTable_data']/tr"));
+		for (int i = 0; i <= list.size(); i++) {
+			WebElement listText = driver.findElement(By.xpath(".//*[@id='memberSearchResultsForm:memberSearchResultsTable:searchResultsTable_data']/tr["+(i+1)+"]/td[4]"));
+			WebElement memID = driver.findElement(By.xpath(".//*[@id='memberSearchResultsForm:memberSearchResultsTable:searchResultsTable:"+i+":memberDemographics']"));
+			if (listText.getText().contains(dob)) {
+				memID.click();
+				break;
+			} 
+		}
+		
+		
+		
+		
+		
+	}
+	
 }
