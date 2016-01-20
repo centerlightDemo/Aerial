@@ -70,5 +70,6 @@ public class TestCaseforVerifySearchModule extends StartUp {
 				ScreenShot.captureScreen(driver, "Open Member Profile"));
 		//System.out.println(memText);
 		extent.endTest();
+		driver.quit();
 	}
 }

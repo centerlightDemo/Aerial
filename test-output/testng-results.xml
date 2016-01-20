@@ -1,41 +1,292 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="3" total="15" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17437" started-at="2016-01-20T17:13:37Z" finished-at="2016-01-20T17:13:55Z">
+  <suite name="Suite" duration-ms="79490" started-at="2016-01-20T18:02:05Z" finished-at="2016-01-20T18:03:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17437" started-at="2016-01-20T17:13:37Z" finished-at="2016-01-20T17:13:55Z">
+    <test name="Firefox Test" duration-ms="27187" started-at="2016-01-20T18:02:05Z" finished-at="2016-01-20T18:02:32Z">
       <class name="testCase.TestCaseforVerifySearchModule">
-        <test-method status="PASS" signature="startup()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="startup" is-config="true" duration-ms="12068" started-at="2016-01-20T12:13:25Z" finished-at="2016-01-20T12:13:37Z">
+        <test-method status="PASS" signature="startup(java.lang.String)[pri:0, instance:testCase.TestCaseforVerifySearchModule@1c68925]" name="startup" is-config="true" duration-ms="11513" started-at="2016-01-20T13:02:05Z" finished-at="2016-01-20T13:02:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method status="PASS" signature="loging()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="loging" duration-ms="4895" started-at="2016-01-20T12:13:37Z" finished-at="2016-01-20T12:13:42Z">
+        <test-method status="PASS" signature="loging()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1c68925]" name="loging" duration-ms="5092" started-at="2016-01-20T13:02:17Z" finished-at="2016-01-20T13:02:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loging -->
-        <test-method status="PASS" signature="clickSearchList()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="clickSearchList" duration-ms="3001" started-at="2016-01-20T12:13:42Z" finished-at="2016-01-20T12:13:45Z">
+        <test-method status="PASS" signature="clickSearchList()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1c68925]" name="clickSearchList" duration-ms="863" started-at="2016-01-20T13:02:22Z" finished-at="2016-01-20T13:02:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSearchList -->
-        <test-method status="PASS" signature="clickNameTab()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="clickNameTab" duration-ms="2358" started-at="2016-01-20T12:13:45Z" finished-at="2016-01-20T12:13:47Z">
+        <test-method status="PASS" signature="clickNameTab()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1c68925]" name="clickNameTab" duration-ms="2368" started-at="2016-01-20T13:02:23Z" finished-at="2016-01-20T13:02:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickNameTab -->
-        <test-method status="PASS" signature="membersSearchByName()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="membersSearchByName" duration-ms="4357" started-at="2016-01-20T12:13:47Z" finished-at="2016-01-20T12:13:52Z">
+        <test-method status="PASS" signature="membersSearchByName()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1c68925]" name="membersSearchByName" duration-ms="4321" started-at="2016-01-20T13:02:25Z" finished-at="2016-01-20T13:02:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- membersSearchByName -->
-        <test-method status="PASS" signature="openMemberProfile()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="openMemberProfile" duration-ms="2814" started-at="2016-01-20T12:13:52Z" finished-at="2016-01-20T12:13:55Z">
+        <test-method status="FAIL" signature="openMemberProfile()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1c68925]" name="openMemberProfile" duration-ms="3016" started-at="2016-01-20T13:02:29Z" finished-at="2016-01-20T13:02:32Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Process refused to die after 10 seconds, and couldn't taskkill it: Unable to find executable for: taskkill]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn't taskkill it: Unable to find executable for: taskkill
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:142)
+	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$2(UnixProcess.java:246)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)
+	at org.openqa.selenium.firefox.FirefoxBinary.quit(FirefoxBinary.java:259)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.quit(NewProfileExtensionConnection.java:204)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.quit(FirefoxDriver.java:364)
+	at org.openqa.selenium.firefox.FirefoxDriver.stopClient(FirefoxDriver.java:310)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:519)
+	at testCase.TestCaseforVerifySearchModule.openMemberProfile(TestCaseforVerifySearchModule.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.lang.NullPointerException: Unable to find executable for: taskkill
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:250)
+	at org.openqa.selenium.os.UnixProcess.<init>(UnixProcess.java:62)
+	at org.openqa.selenium.os.CommandLine.<init>(CommandLine.java:38)
+	at org.openqa.selenium.os.WindowsUtils.killPID(WindowsUtils.java:178)
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:138)
+	... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMemberProfile -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1ba5a14]" name="tearDown" is-config="true" duration-ms="935" started-at="2016-01-20T12:13:55Z" finished-at="2016-01-20T12:13:56Z">
+      </class> <!-- testCase.TestCaseforVerifySearchModule -->
+    </test> <!-- Firefox Test -->
+    <test name="IE Test" duration-ms="28237" started-at="2016-01-20T18:02:32Z" finished-at="2016-01-20T18:03:01Z">
+      <class name="testCase.TestCaseforVerifySearchModule">
+        <test-method status="PASS" signature="startup(java.lang.String)[pri:0, instance:testCase.TestCaseforVerifySearchModule@ba2a48]" name="startup" is-config="true" duration-ms="7821" started-at="2016-01-20T13:02:32Z" finished-at="2016-01-20T13:02:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method status="PASS" signature="loging()[pri:0, instance:testCase.TestCaseforVerifySearchModule@ba2a48]" name="loging" duration-ms="4870" started-at="2016-01-20T13:02:40Z" finished-at="2016-01-20T13:02:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loging -->
+        <test-method status="PASS" signature="clickSearchList()[pri:0, instance:testCase.TestCaseforVerifySearchModule@ba2a48]" name="clickSearchList" duration-ms="1668" started-at="2016-01-20T13:02:45Z" finished-at="2016-01-20T13:02:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSearchList -->
+        <test-method status="PASS" signature="clickNameTab()[pri:0, instance:testCase.TestCaseforVerifySearchModule@ba2a48]" name="clickNameTab" duration-ms="2982" started-at="2016-01-20T13:02:47Z" finished-at="2016-01-20T13:02:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNameTab -->
+        <test-method status="PASS" signature="membersSearchByName()[pri:0, instance:testCase.TestCaseforVerifySearchModule@ba2a48]" name="membersSearchByName" duration-ms="4853" started-at="2016-01-20T13:02:50Z" finished-at="2016-01-20T13:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- membersSearchByName -->
+        <test-method status="FAIL" signature="openMemberProfile()[pri:0, instance:testCase.TestCaseforVerifySearchModule@ba2a48]" name="openMemberProfile" duration-ms="6024" started-at="2016-01-20T13:02:55Z" finished-at="2016-01-20T13:03:01Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
+System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
+System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:516)
+	at testCase.TestCaseforVerifySearchModule.openMemberProfile(TestCaseforVerifySearchModule.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn't taskkill it: Unable to find executable for: taskkill
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:142)
+	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$2(UnixProcess.java:246)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	... 27 more
+Caused by: java.lang.NullPointerException: Unable to find executable for: taskkill
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:250)
+	at org.openqa.selenium.os.UnixProcess.<init>(UnixProcess.java:62)
+	at org.openqa.selenium.os.CommandLine.<init>(CommandLine.java:38)
+	at org.openqa.selenium.os.WindowsUtils.killPID(WindowsUtils.java:178)
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:138)
+	... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMemberProfile -->
+      </class> <!-- testCase.TestCaseforVerifySearchModule -->
+    </test> <!-- IE Test -->
+    <test name="Chrome Test" duration-ms="24030" started-at="2016-01-20T18:03:01Z" finished-at="2016-01-20T18:03:25Z">
+      <class name="testCase.TestCaseforVerifySearchModule">
+        <test-method status="PASS" signature="startup(java.lang.String)[pri:0, instance:testCase.TestCaseforVerifySearchModule@1550481]" name="startup" is-config="true" duration-ms="8085" started-at="2016-01-20T13:03:01Z" finished-at="2016-01-20T13:03:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method status="PASS" signature="loging()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1550481]" name="loging" duration-ms="3897" started-at="2016-01-20T13:03:09Z" finished-at="2016-01-20T13:03:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loging -->
+        <test-method status="PASS" signature="clickSearchList()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1550481]" name="clickSearchList" duration-ms="842" started-at="2016-01-20T13:03:13Z" finished-at="2016-01-20T13:03:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSearchList -->
+        <test-method status="PASS" signature="clickNameTab()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1550481]" name="clickNameTab" duration-ms="2420" started-at="2016-01-20T13:03:13Z" finished-at="2016-01-20T13:03:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNameTab -->
+        <test-method status="PASS" signature="membersSearchByName()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1550481]" name="membersSearchByName" duration-ms="4383" started-at="2016-01-20T13:03:16Z" finished-at="2016-01-20T13:03:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- membersSearchByName -->
+        <test-method status="FAIL" signature="openMemberProfile()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1550481]" name="openMemberProfile" duration-ms="4391" started-at="2016-01-20T13:03:20Z" finished-at="2016-01-20T13:03:25Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
+System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
+System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:516)
+	at testCase.TestCaseforVerifySearchModule.openMemberProfile(TestCaseforVerifySearchModule.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn't taskkill it: Unable to find executable for: taskkill
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:142)
+	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$2(UnixProcess.java:246)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	... 27 more
+Caused by: java.lang.NullPointerException: Unable to find executable for: taskkill
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:250)
+	at org.openqa.selenium.os.UnixProcess.<init>(UnixProcess.java:62)
+	at org.openqa.selenium.os.CommandLine.<init>(CommandLine.java:38)
+	at org.openqa.selenium.os.WindowsUtils.killPID(WindowsUtils.java:178)
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:138)
+	... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMemberProfile -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCase.TestCaseforVerifySearchModule@1550481]" name="tearDown" is-config="true" duration-ms="6563" started-at="2016-01-20T13:03:25Z" finished-at="2016-01-20T13:03:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCase.TestCaseforVerifySearchModule -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Chrome Test -->
+  </suite> <!-- Suite -->
 </testng-results>
