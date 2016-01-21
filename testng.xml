@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+
+  <test name="Firefox Test">
+  <parameter name="browser"  value="firefox"/>
+    <classes>
+      <class name="testCase.TestCaseforVerifySearchModule"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+  <test name="IE Test">
+   <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="testCase.TestCaseforVerifySearchModule"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   
+  <test name="Chrome Test">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCase.TestCaseforVerifySearchModule"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
