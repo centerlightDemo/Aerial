@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test name="Firefox Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testCase.TestCaseforVerifySearchModule">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openMemberProfile"/>
+          <include name="startup"/>
+          <include name="startup"/>
+          <include name="startup"/>
+          <include name="reportIni"/>
+        </methods>
+      </class> <!-- testCase.TestCaseforVerifySearchModule -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+  <test name="IE Test(failed)">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="testCase.TestCaseforVerifySearchModule">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openMemberProfile"/>
+          <include name="startup"/>
+          <include name="startup"/>
+          <include name="startup"/>
+          <include name="reportIni"/>
+        </methods>
+      </class> <!-- testCase.TestCaseforVerifySearchModule -->
+    </classes>
+  </test> <!-- IE Test(failed) -->
+  <test name="Chrome Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCase.TestCaseforVerifySearchModule">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openMemberProfile"/>
+          <include name="startup"/>
+          <include name="startup"/>
+          <include name="startup"/>
+          <include name="reportIni"/>
+        </methods>
+      </class> <!-- testCase.TestCaseforVerifySearchModule -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,17 @@
+name: Suite
+tests:
+  - name: Firefox Test
+    parameters: { browser: firefox }
+    classes:
+      - testCase.TestCaseforVerifySearchModule
+
+  - name: IE Test
+    parameters: { browser: IE }
+    classes:
+      - testCase.TestCaseforVerifySearchModule
+
+  - name: Chrome Test
+    parameters: { browser: chrome }
+    classes:
+      - testCase.TestCaseforVerifySearchModule
+

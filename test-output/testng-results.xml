@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="15" passed="15">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="83419" started-at="2016-01-22T17:17:02Z" finished-at="2016-01-22T17:18:25Z">
+    <groups>
+    </groups>
+    <test name="Firefox Test" duration-ms="26651" started-at="2016-01-22T17:17:02Z" finished-at="2016-01-22T17:17:28Z">
+      <class name="testCase.TestCaseforVerifySearchModule">
+        <test-method status="PASS" signature="startup(java.lang.String)[pri:0, instance:testCase.TestCaseforVerifySearchModule@ea639]" name="startup" is-config="true" duration-ms="11393" started-at="2016-01-22T12:17:02Z" finished-at="2016-01-22T12:17:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method status="PASS" signature="loging()[pri:0, instance:testCase.TestCaseforVerifySearchModule@ea639]" name="loging" duration-ms="4708" started-at="2016-01-22T12:17:13Z" finished-at="2016-01-22T12:17:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loging -->
+        <test-method status="PASS" signature="clickSearchList()[pri:0, instance:testCase.TestCaseforVerifySearchModule@ea639]" name="clickSearchList" duration-ms="917" started-at="2016-01-22T12:17:18Z" finished-at="2016-01-22T12:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSearchList -->
+        <test-method status="PASS" signature="clickNameTab()[pri:0, instance:testCase.TestCaseforVerifySearchModule@ea639]" name="clickNameTab" duration-ms="2408" started-at="2016-01-22T12:17:19Z" finished-at="2016-01-22T12:17:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNameTab -->
+        <test-method status="PASS" signature="membersSearchByName()[pri:0, instance:testCase.TestCaseforVerifySearchModule@ea639]" name="membersSearchByName" duration-ms="4317" started-at="2016-01-22T12:17:21Z" finished-at="2016-01-22T12:17:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- membersSearchByName -->
+        <test-method status="PASS" signature="openMemberProfile()[pri:0, instance:testCase.TestCaseforVerifySearchModule@ea639]" name="openMemberProfile" duration-ms="2892" started-at="2016-01-22T12:17:25Z" finished-at="2016-01-22T12:17:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMemberProfile -->
+      </class> <!-- testCase.TestCaseforVerifySearchModule -->
+    </test> <!-- Firefox Test -->
+    <test name="IE Test" duration-ms="30602" started-at="2016-01-22T17:17:28Z" finished-at="2016-01-22T17:17:59Z">
+      <class name="testCase.TestCaseforVerifySearchModule">
+        <test-method status="PASS" signature="startup(java.lang.String)[pri:0, instance:testCase.TestCaseforVerifySearchModule@12050f6]" name="startup" is-config="true" duration-ms="9334" started-at="2016-01-22T12:17:28Z" finished-at="2016-01-22T12:17:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method status="PASS" signature="loging()[pri:0, instance:testCase.TestCaseforVerifySearchModule@12050f6]" name="loging" duration-ms="4873" started-at="2016-01-22T12:17:38Z" finished-at="2016-01-22T12:17:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loging -->
+        <test-method status="PASS" signature="clickSearchList()[pri:0, instance:testCase.TestCaseforVerifySearchModule@12050f6]" name="clickSearchList" duration-ms="1966" started-at="2016-01-22T12:17:43Z" finished-at="2016-01-22T12:17:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSearchList -->
+        <test-method status="PASS" signature="clickNameTab()[pri:0, instance:testCase.TestCaseforVerifySearchModule@12050f6]" name="clickNameTab" duration-ms="3410" started-at="2016-01-22T12:17:45Z" finished-at="2016-01-22T12:17:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNameTab -->
+        <test-method status="PASS" signature="membersSearchByName()[pri:0, instance:testCase.TestCaseforVerifySearchModule@12050f6]" name="membersSearchByName" duration-ms="5049" started-at="2016-01-22T12:17:48Z" finished-at="2016-01-22T12:17:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- membersSearchByName -->
+        <test-method status="PASS" signature="openMemberProfile()[pri:0, instance:testCase.TestCaseforVerifySearchModule@12050f6]" name="openMemberProfile" duration-ms="5965" started-at="2016-01-22T12:17:53Z" finished-at="2016-01-22T12:17:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMemberProfile -->
+      </class> <!-- testCase.TestCaseforVerifySearchModule -->
+    </test> <!-- IE Test -->
+    <test name="Chrome Test" duration-ms="26141" started-at="2016-01-22T17:17:59Z" finished-at="2016-01-22T17:18:25Z">
+      <class name="testCase.TestCaseforVerifySearchModule">
+        <test-method status="PASS" signature="reportIni()[pri:0, instance:testCase.TestCaseforVerifySearchModule@15f7ae5]" name="reportIni" is-config="true" duration-ms="194" started-at="2016-01-22T12:17:02Z" finished-at="2016-01-22T12:17:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportIni -->
+        <test-method status="PASS" signature="startup(java.lang.String)[pri:0, instance:testCase.TestCaseforVerifySearchModule@15f7ae5]" name="startup" is-config="true" duration-ms="9701" started-at="2016-01-22T12:17:59Z" finished-at="2016-01-22T12:18:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method status="PASS" signature="loging()[pri:0, instance:testCase.TestCaseforVerifySearchModule@15f7ae5]" name="loging" duration-ms="4337" started-at="2016-01-22T12:18:09Z" finished-at="2016-01-22T12:18:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loging -->
+        <test-method status="PASS" signature="clickSearchList()[pri:0, instance:testCase.TestCaseforVerifySearchModule@15f7ae5]" name="clickSearchList" duration-ms="846" started-at="2016-01-22T12:18:13Z" finished-at="2016-01-22T12:18:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSearchList -->
+        <test-method status="PASS" signature="clickNameTab()[pri:0, instance:testCase.TestCaseforVerifySearchModule@15f7ae5]" name="clickNameTab" duration-ms="2394" started-at="2016-01-22T12:18:14Z" finished-at="2016-01-22T12:18:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNameTab -->
+        <test-method status="PASS" signature="membersSearchByName()[pri:0, instance:testCase.TestCaseforVerifySearchModule@15f7ae5]" name="membersSearchByName" duration-ms="4418" started-at="2016-01-22T12:18:16Z" finished-at="2016-01-22T12:18:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- membersSearchByName -->
+        <test-method status="PASS" signature="openMemberProfile()[pri:0, instance:testCase.TestCaseforVerifySearchModule@15f7ae5]" name="openMemberProfile" duration-ms="4439" started-at="2016-01-22T12:18:21Z" finished-at="2016-01-22T12:18:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMemberProfile -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCase.TestCaseforVerifySearchModule@15f7ae5]" name="tearDown" is-config="true" duration-ms="6819" started-at="2016-01-22T12:18:25Z" finished-at="2016-01-22T12:18:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCase.TestCaseforVerifySearchModule -->
+    </test> <!-- Chrome Test -->
+  </suite> <!-- Suite -->
+</testng-results>
