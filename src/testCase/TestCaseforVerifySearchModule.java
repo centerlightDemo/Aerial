@@ -11,7 +11,7 @@ public class TestCaseforVerifySearchModule extends StartUp {
 	public void loging() throws InterruptedException {
 		LogIn signin = new LogIn(driver);
 		System.out.println("Start Test 1");
-		extent.startTest("TC01.2", "Sign IN");
+		extent.startTest("TC01.2", "Sign IN("+browserUse+")");
 		signin.validLogin();
 		Thread.sleep(2000);
 		extent.log(LogStatus.PASS, "Landed Home Page", "View details below:",
@@ -26,7 +26,7 @@ public class TestCaseforVerifySearchModule extends StartUp {
 		AllMethod all = new AllMethod(driver);
 		all.clickOnTheListByText("Members");
 		extent.log(LogStatus.PASS, "Expand Member Search List", "View details below:",
-				ScreenShot.captureScreen(driver, "Expand List"));
+				ScreenShot.captureScreen(driver, "Expand List " +browserUse));
 	
 		extent.endTest();
 	}
@@ -39,7 +39,7 @@ public class TestCaseforVerifySearchModule extends StartUp {
 		all.clickOnTheTabByText("Name");
 		Thread.sleep(2000);
 		extent.log(LogStatus.PASS, "Member Search Tab Name Page Open", "View details below:",
-				ScreenShot.captureScreen(driver, "Member Search Tab Name Page Open"));
+				ScreenShot.captureScreen(driver, "Member Search Tab Name Page Open "+browserUse));
 		extent.endTest();
 	}
 
@@ -53,7 +53,7 @@ public class TestCaseforVerifySearchModule extends StartUp {
 		Thread.sleep(2000);
 		
 		extent.log(LogStatus.PASS, "Member Search By Name ", "View details below:",
-				ScreenShot.captureScreen(driver, "Member Search By Name"));
+				ScreenShot.captureScreen(driver, "Member Search By Name "+browserUse));
 		extent.endTest();
 	}
 
@@ -67,7 +67,7 @@ public class TestCaseforVerifySearchModule extends StartUp {
 		
 		Thread.sleep(2000);
 		extent.log(LogStatus.PASS, "Open Member Profile ", "View details below:",
-				ScreenShot.captureScreen(driver, "Open Member Profile"));
+				ScreenShot.captureScreen(driver, "Open Member Profile "+browserUse));
 		//System.out.println(memText);
 		extent.endTest();
 		driver.close();

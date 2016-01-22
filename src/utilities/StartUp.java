@@ -27,7 +27,7 @@ public class StartUp {
 	public static String imageLocation = "images/";
 	public static String urlReport="C:\\Users\\jakther\\workspace\\aerial\\Report\\aerial.html";
 	public static String url="https://clhtest.medecision.com/ACM/login.faces";
-	
+	public static String browserUse=null; 
 	
 	
 	
@@ -58,11 +58,14 @@ public class StartUp {
 		    ieCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 		    driver = new InternetExplorerDriver(ieCapabilities);
 		    //driver = new InternetExplorerDriver();
+		    browserUse="IE";
 		}else if(browserName.equalsIgnoreCase("firefox")){
 			driver=new FirefoxDriver();
+			browserUse="Firefox";
 		}else if(browserName.equalsIgnoreCase("chrome")){
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\jakther\\Desktop\\jahed\\java\\chromedriver\\chromedriver.exe");
 			driver=new ChromeDriver();
+			browserUse="Chrome";
 		}
 		
 		
